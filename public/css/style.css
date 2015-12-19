@@ -12,10 +12,15 @@ blockquote {
     border-bottom: 2px solid #4CAF50;
 }
 
+#mis-botones-prin,#formulario-modible li,#ul-vertical li {opacity: 0;}
+#formulario-modible li{transform: translateX(-100px);}
+#ul-vertical li {} 
+.btn-chip{border-radius: 2em;}
 
-.borde {
+.borde{
 	border: 1px solid #727272;
 }
+
 
 .cambio img{
 	transition: all 4s ease-out;
@@ -198,7 +203,9 @@ blockquote {
   height: auto;
   height: 200px;
 }
-
+.my-banner{
+  min-height: 630px !important;
+}
 .relativo{position: relative;}
 
 .rto-mono-light-ita{
@@ -310,6 +317,8 @@ nav .nav-wrapper {
 	color: #4CAF50;
 }
 
+
+
 .relativo{
 	position: relative;
 }
@@ -396,12 +405,17 @@ nav .nav-wrapper {
  	   display: initial !important; 
   	} 
 
+
+
 }
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
+  }
+  .my-banner{
+  min-height: 500px !important;
   }
   #index-banner .section {
     top: 10%;

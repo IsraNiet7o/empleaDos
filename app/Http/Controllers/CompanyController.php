@@ -16,7 +16,7 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        return view('frontend.anuncios');
+        return view('company.home');
     }
 
     /**
@@ -51,6 +51,23 @@ class CompanyController extends Controller
         //
     }
 
+    
+
+    public function editCuenta($id)
+    {
+        return view('company.content.datos-cuenta');
+    }
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  Request  $request
+     * @param  int  $id
+     * @return Response
+     */
+    public function updateCuneta(Request $request, $id)
+    {
+        //
+    }
     /**
      * Show the form for editing the specified resource.
      *
@@ -59,9 +76,8 @@ class CompanyController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('company.content.datos-company');
     }
-
     /**
      * Update the specified resource in storage.
      *

@@ -8,7 +8,7 @@
 <section class="container">
 	<h3 class="condensada-regular green-text">Bienvenido a tu Portal de Empleo</h3>
 	<div class="row">
-		<di class="col s12 m6">
+		<div class="col s12 m6">
 			<div class="card">
 			    <div class="card-image waves-effect waves-block waves-light">
 			      <img class="activator" src="{!!asset('img/admi-user2.jpg')!!}">
@@ -23,8 +23,8 @@
 			      <p><p><a href="#!" class="green-text text-darken-4">Mis Preferencias: </a> Esta sección es muy importante, porque no dice cuáles son tus intereses y te llegaran notificaciones si hay nuevas vacantes que cumplan con tus preferencias.  </p>
 			      <p>Ó si prefieres sube tu currículum en formato Word ó PDF.</p>
 			    </div>
-			  </div>
-		</di>
+			</div>
+		</div>
 		<di class="col s12 m6">
 			<div class="card">
 			    <div class="card-image waves-effect waves-block waves-light">

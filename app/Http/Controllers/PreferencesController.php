@@ -26,7 +26,7 @@ class PreferencesController extends Controller
      */
     public function create()
     {
-        return view('aspirantes.preferencias');
+        return view('aspirantes.content.preferencias');
     }
 
     /**

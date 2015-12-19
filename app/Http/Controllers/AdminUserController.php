@@ -87,7 +87,7 @@ class AdminUserController extends Controller
 
     public function getPostu()
     {
-        return view('aspirantes.listapostu');
+        return view('aspirantes.content.listapostu');
     }
 
 }

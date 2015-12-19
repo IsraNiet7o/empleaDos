@@ -26,7 +26,7 @@ class CurriculumController extends Controller
      */
     public function create()
     {
-        return view('aspirantes.curriculum');
+        return view('aspirantes.content.curriculum');
     }
 
     /**
@@ -48,7 +48,7 @@ class CurriculumController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('aspirantes.content.curriculum_show');
     }
 
     /**
@@ -87,6 +87,6 @@ class CurriculumController extends Controller
 
     public function upCurriculum()
     {
-        return view('aspirantes.subircv');
+        return view('aspirantes.content.subircv');
     }
 }

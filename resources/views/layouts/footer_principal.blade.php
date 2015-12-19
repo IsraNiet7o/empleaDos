@@ -37,18 +37,18 @@
 	      <div class="col s12 m2  l2 offset-l1">
 	      	<h5 class="white-text light">Aspirantes</h5>
 	        <ul>
-	          <li><a class="grey-text text-lighten-3 thin" href="{!! asset('/Aspirante/create')!!}">Registrarme</a></li>
-	          <li><a class="grey-text text-lighten-3 thin" href="{!!asset('/Aspirante/RecuperarCuenta')!!}">Recuperar Cuenta</a></li>
+	          <li><a class="grey-text text-lighten-3 thin" href="{{ route('frontend.create') }}">Registrarme</a></li>
+	          <li><a class="grey-text text-lighten-3 thin" href="{{ route('frontend.getcuenta') }}">Recuperar Cuenta</a></li>
 	          <li class="divider"></li>
 	          <br>
-	          <li><a class="grey-text text-lighten-3 thin" href="{!! asset('/Preguntas/User')!!}">Preguntas Frecuentes</a></li>
+	          <li><a class="grey-text text-lighten-3 thin" href="{{ route('frontend.preguntas') }}">Preguntas Frecuentes</a></li>
 	        </ul>
 	      </div>
 	      <div class="col l2 s12 m2">
 	        <h5 class="white-text light">Empresas</h5>
 	        <ul>
-	          <li><a class="grey-text text-lighten-3 thin" href="{!! asset('/Company')!!}">Nuestros Paquetes</a></li>
-	          <li><a class="grey-text text-lighten-3 thin" href="{!! asset('/Company/create')!!}">¿Como Postular?</a></li>
+	          <li><a class="grey-text text-lighten-3 thin" href="{{ route('frontend.company.anuncios') }}">Nuestros Paquetes</a></li>
+	          <li><a class="grey-text text-lighten-3 thin" href="{{ route('company.create') }}">¿Como Postular?</a></li>
 	          <li class="divider"></li>
 	          <br>
 	          <li><a class="grey-text text-lighten-3 thin" href="#!">Preguntas Frecuentes</a></li>
@@ -63,7 +63,7 @@
 	  <div class="footer-copyright">
 	    <div class="container">
 	    © <?php echo date("Y");?> Copyright Aptoner
-	    <a class="grey-text text-lighten-4 right" href="{!! asset('/')!!}">Inicio<i class=" material-icons ico-aling">home</i></a>
+	    <a class="grey-text text-lighten-4 right" href="{{ route('frontend.index') }}">Inicio<i class=" material-icons ico-aling">home</i></a>
 	    </div>
 	  </div>
 	</footer>

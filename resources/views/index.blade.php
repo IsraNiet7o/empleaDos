@@ -39,33 +39,12 @@
       	<div class="col s12 caja-busqueda ">
       		<div class="card-panel z-depth-2 condensada-regular ">
           		<div class="row ">
-            		{!! Form::open(['route'=>'Busqueda.Vacante.store' , 'method'=>'GET']) !!}
-            			<div class="input-field col s12 l6 grey-text text-darken-2">
-            				{!! Form::text('palabraClave', null, ['class' => 'validate'])	!!}
-            				{!!	Form::label('palabraClave','Palabra Clave')	!!}
-            			</div>
-            			<div class="input-field col s12 l6  grey-text text-darken-2 ">
-            				{!!Form::select('Estado',array('1'=>'Chihuahua','2'=>'Guadalajara','3'=>'Monterrey'), null, ['placeholder' => 'Elige un Estado'])!!}
-            				{!!	Form::label('Estado','Estado')!!}
-            			</div>
-            			<div class="input-field col s6 grey-text text-darken-2">
-            				{!!Form::select('categoria',array('1'=>'Ingeniería','2'=>'Contabilidad','3'=>'Diseño'), null, ['placeholder' => 'Elige una Categoría'])!!}
-            				{!!	Form::label('categoria','Categoría')!!}
-            			</div>
-            			<div class="input-field col s6 grey-text text-darken-2">
-            				{!!Form::select('subcategoria',array('1'=>'Sub1','2'=>'Sub2','3'=>'Sub3'), null, ['placeholder' => 'Elige una Subcategoía'])!!}
-            				{!!	Form::label('subcategoria','Subcategoía')!!}
-            			</div>
-            			<div class="input-field col s6 m3 grey-text text-darken-2">
-            				{!!Form::select('dia',array('1'=>'Ayer','2'=>'Hace 2 Días','3'=>'Hace 3 Días'), null, ['placeholder' => 'No importa'])!!}
-            				{!!	Form::label('dia','Desde')!!}
-            			</div>
-            			<div class="input-field col s6 m3 grey-text text-darken-2">
-            				{!!Form::select('salario',array('1'=>'$0 MXN - $5,000 MXN','2'=>'$5,000 MXN - $10,000 MXN','3'=>'$10,000 MXN - $15,000 MXN'), null, ['placeholder' => 'No importa'])!!}
-            				{!!	Form::label('salario','Salario')!!}
-            			</div>
+            		{!! Form::open(['route'=>'vacante.index', 'method'=>'GET']) !!}
+                    
+                    @include('frontend.partials.form-busqueda')
+
             			<div class="input-field col s12 m6 grey-text text-darken-2 center">
-            				<button class="btn waves-effect waves-light  green btn-large" type="submit" name="action">Buscar Empleo 
+            				<button class="btn waves-effect waves-light  green btn-large" type="submit" name="action"><i class="material-icons right">search</i>Buscar Vacante 
     						    </button>	
             			</div>
     				    {!! Form::close() !!}

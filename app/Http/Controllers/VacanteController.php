@@ -9,6 +9,10 @@ use empleaDos\Http\Controllers\Controller;
 
 class VacanteController extends Controller
 {
+    public function admin()
+    {
+        return view('company.content.vacante-admin');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -26,7 +30,7 @@ class VacanteController extends Controller
      */
     public function create()
     {
-        //
+        return view('company.content.vacante-create');
     }
 
     /**

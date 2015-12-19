@@ -10,7 +10,7 @@
 	<h3 class="green-text text-darken-2">Registra Gratis tu Empresa <i class="material-icons small ico-aling">business</i></h3>
 	<p class="grey-text text-darken-2 paging">Selecciona ahora <strong>entre los mejores perfiles que postulan directamente a tus vacantes</strong> o busca entre más de 1 millón de currículums publicados. En este portal hacemos que tu proceso de selección sea rápido y efectivo.
  </p>
-		{!! Form::open() !!}
+	{!! Form::open() !!}
 	<section>
 		<div class="row">
 			<div class="col s10 offset-s1">

@@ -69,7 +69,7 @@
 							<li><i class="material-icons ico-aling">attach_money</i>10,000</li>
 						</ul>
 					</div>
-				</div>
+				</div>{{-- --}}
 				<div class="divider"></div><div class="divider"></div>
 				<div class="row valign-wrapper caja-empleo">
 					<div class="col s1 hide-on-med-and-down l2 center valign">
